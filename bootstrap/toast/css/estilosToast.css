@@ -1,0 +1,144 @@
+#mitoast {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    right: 2.5%;
+    top: 10%;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: .25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1);
+    max-width: 350px;
+    width: 350px;
+}
+#mitoast.mostrar {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 4.6s;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 4.6s;
+    /*animation: fadeIn 5s, fadeOut ease 10s;
+    -webkit-animation: fadeIn 5s, fadeOut ease 10s;*/
+}
+#mitoast.cerrar {
+    visibility: hidden;    
+    animation: fadeout 0.5s 4.8s;
+    -webkit-animation: fadeout 0.5s 4.8s;
+}
+
+.toast {
+    max-width: 350px;
+    overflow: hidden;
+    font-size: 0.875rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 0;    
+}
+
+.toast:not(:last-child) {
+    margin-bottom: 0.75rem;
+}
+
+.toast.showing {
+    opacity: 1;
+}
+
+.toast.show {
+    display: block;
+    opacity: 1;
+}
+.toast.hide {
+    display: none;
+}
+.toast-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(0,153,153, 0.9);
+    background-clip: padding-box;
+}
+.toast-body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    padding: 0.75rem;
+    background-color: rgba(255,255,255, 0.9);;
+}
+
+
+@keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 2.5%; opacity: 1;}
+}
+@-webkit-keyframes fadein {
+    from {right: 0; opacity: 0;} 
+    to {right: 2.5%; opacity: 1;}
+}
+@keyframes fadeout {
+    from {right: 2.5%; opacity: 1;}
+    to {right: 0; opacity: 0;}
+}
+@-webkit-keyframes fadeout {
+    from {right: 2.5%; opacity: 1;} 
+    to {right: 0; opacity: 0;}
+}
+
+
+
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+    100% {opacity:1;}
+    0% {opacity:0;}
+}
+
+@-moz-keyframes fadeOut {
+    100% {opacity:1;}
+    0% {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut {
+   100% {opacity:1;}
+    0% {opacity:0;}
+}
+
+@-o-keyframes fadeOut {
+    100% {opacity:1;}
+    0% {opacity:0;}
+}
+
+@-ms-keyframes fadeOut {
+    100% {opacity:1;}
+    0% {opacity:0;}
+}

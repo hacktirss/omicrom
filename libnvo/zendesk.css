@@ -1,0 +1,52 @@
+/* elements in page */
+#ContenedorIconz {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+
+/* elements in page */
+#conversation-badge {
+  background: #065e55;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+#conversation-badge i {
+ margin-right: 5px;
+ font-size: 20px;
+}
+
+#unread-indicator {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.7;
+  background: white;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+
+/* css for tilt animation */
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.tilt-animation {
+  animation: tilt-shaking 0.25s;
+}

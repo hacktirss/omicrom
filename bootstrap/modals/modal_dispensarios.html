@@ -1,0 +1,37 @@
+<div class="modal fade" id="modal-dispensarios">
+    <div class="modal-dialog modal-md">
+        <form name="formModal1" id="formModal1" method="post" action="">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Nuevo Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                                    
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <table aria-hidden="true" style="width: 100%;">
+                                <div class="row no-padding texto_tablas">
+                                    <div class="col-3">Dispensarios :</div>
+                                    <div class="col-2"><?php ListasCatalogo::getDispensarios("Dispensario",["*" => "Todos"],'class="texto_tablas" style="height:25px"') ?></div>
+                                    <div class="col-4"><input class="texto_tablas" style="height:25px" type="date" name="FechaC" id="FechaC"></div>
+                                    <div class="col-3"><input class="nombre_cliente" style="height:25px" type="submit" name="BotonC" value="Calibracion" id="Calibracion"></div>
+                                </div>
+                                <div class="row no-padding texto_tablas">
+                                    <div class="col-3">Posiciones :</div>
+                                    <div class="col-2"><?php ListasCatalogo::getPosiciones("Posiciones","Todos","class='texto_tablas'") ?></div>
+                                    <div class="col-4"><?php ListasCatalogo::getProveedores("Proveedores","'Equipo'","","class='texto_tablas'") ?></div>
+                                    <div class="col-3"><input class="nombre_cliente" style="height:25px" type="submit" name="BotonE" value="Proveedor" id="Proveedor"></div>
+                                </div>
+                            </table>
+                        </div>                        
+                    </div>
+                </div>                
+            </div>
+            <!-- /.modal-content -->
+            <input type="hidden" name="Identificador" class="Identificador">
+            <input type="hidden" name="ParamValidator" class="ParamValidator">
+        </form>
+    </div>
+</div>

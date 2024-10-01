@@ -1,0 +1,25 @@
+# Created by https://www.gitignore.io/api/netbeans
+# Edit at https://www.gitignore.io/?templates=netbeans
+
+### NetBeans ###
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+#dist/
+nbdist/
+.nb-gradle/
+fae/cer.cer
+fae/key.key
+fae/cer.pem
+fae/key.pem
+fae/file.pfx
+fae/logo.png
+fae/archivos/
+fae/archivos/*.xml
+fae/archivos/*.pdf
+libnvo/logovales.png
+softcoatl/config.php
+
+# End of https://www.gitignore.io/api/netbeans

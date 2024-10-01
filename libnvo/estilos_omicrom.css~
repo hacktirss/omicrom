@@ -1,0 +1,170 @@
+@charset "utf-8";
+.menu_3_top {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	color: #066;
+	text-decoration: none;
+}
+.menu_3_top:hover {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	color:#F63;
+	text-decoration: none;
+}
+.nombre_cliente {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #066;
+	text-decoration: none;
+}
+.texto_tabla_naranja_izquierda {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+}
+.texto_tabla_naranja_izquierda_contenido {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+	color: #666;
+	text-decoration: none;
+}
+
+.menu_2:link{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	text-decoration: none;
+
+}
+.subtitulos {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #099;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.numero_posiciones {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #F63;
+	height: 14px;
+	width: 14px;
+}
+.numero_posiciones:hover {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	background-color:#CCC;
+	height: 14px;
+	width: 14px;
+}
+.texto_estado {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	text-decoration: none;
+}
+.texto_bold {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+
+
+.menu_1_top {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #333;
+	text-decoration: none;
+}
+.menu_1_top:hover{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #F63;
+	text-decoration: none;
+}
+
+.menu_2:hover {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #099;
+	text-decoration: none;
+	}
+.menu_2:visited {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #999;
+	text-decoration: none;
+	height: 32px;
+	width: 180px;
+	
+
+}
+.titulos_tabla {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+}
+.texto_tablas {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #066;
+	text-decoration: none;
+}
+.texto_registros_down {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #F63;									
+	text-decoration: none;
+}
+#textfield {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	color: #066;
+	text-decoration: none;
+	border: thin solid #066;
+}
+#button {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #099;
+	border: thin solid #066;
+}
+.texto_bienvenida_usuario {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #066;
+	text-decoration: none;
+}
+.textosBoldAvanRegre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFCC66;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	color: #FFF;
+}

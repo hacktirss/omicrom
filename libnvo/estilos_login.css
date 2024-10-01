@@ -1,0 +1,265 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/10/2019, 03:35:07 PM
+    Author     : Tirso bautista Anaya <tirso.bautista@detisa.com.mx>
+    Edit       : Alejandro Ayala Gonzalez <alejandro.ayala.gonz@hotmail.com>
+*/
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 2px 2px 2px 0px #DADADA inset !important;
+    -webkit-text-fill-color: #566573 !important;
+    transition: background-color 5000s ease-in-out 0s;
+    border-style: none;
+}
+input:-webkit-selected{
+    border-style: none;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+
+}
+input:focus{
+    border: 0px;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#inicio{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+#firstTable{
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    border-collapse: collapse; 
+    text-align: center;
+
+    background-color: white;
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    -o-background-size: initial;
+    background-size: initial;
+    border: 1px solid #006666;
+}
+
+#firstTable tr:first-child{
+    border-bottom: 1px solid #006666;
+    min-height: 100px;
+}
+
+#firstTable tr:nth-child(2){
+    border: none;
+    min-height: 400px;
+}
+
+#firstTable tr:nth-child(3){
+    background-color: transparent;
+}
+
+
+#boxTable{
+    width: 300px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F4F6F6;
+    text-align: center;
+    border-radius: 10px;
+}
+#boxTable div{
+    margin-top: 15px;
+    text-align: left;
+    padding-left: 20px;
+}
+#boxTable div a{
+    text-align: right;
+    font-size:8px;
+    text-decoration: none;
+    color: #85929E;
+}
+
+.Links{
+    text-align: right;
+    font-size: 12px !important;
+    text-decoration: none;
+    color: #566573 !important;
+}
+
+#boxTable div input[type=text],input[type=password]{
+    width: 240px !important;
+    height: 35px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 2px 2px 2px 0px #DADADA !important;
+    background-color: white !important;
+    color: #808B96 !important;
+    font-weight: bold;
+    border: 0px;
+    border-bottom: 1px solid  #ABB2B9 !important;
+    border-right: 1px solid  #ABB2B9 !important;
+}
+#boxTable button{
+    color: #006666;
+    box-shadow: 2px 2px 2px 0px #DADADA;
+}
+#boxTable button:hover{
+    color: #ff6600;
+}
+#boxTable .input-icons i { 
+    position: absolute; 
+    color: #808B96;
+    padding: auto;
+} 
+#boxTable .input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+#boxTable .icon { 
+    padding: 5px; 
+    min-width: 30px; 
+    text-align: center; 
+} 
+#boxTable .input-field { 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+}  
+#boxTable .toggle-password{
+    font-size: 14px;
+}
+
+.subTitles {
+    font-size: 12px;
+    color: #566573;
+}
+
+.iconos{
+    padding-top: 5px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.iconos i{
+    font-size: 30px;
+}
+
+#IdEntrar{
+    margin-top: 10px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 80px;
+    margin-bottom: 50px;
+    appearance: none;
+    background-color: #566573;
+    color: white !important;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    border:1px solid #566573;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+
+#IdEntrar:hover{
+    background-color: #3498DB;
+    position: relative;
+    border:1px solid #F2F3F4;
+    box-shadow: 0 2px 25px rgba(86, 101, 115, 0.5);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #808B96;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #808B96;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #808B96;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+@media (max-width: 700px) and (min-width: 100px) {
+    #ContenedorLogin tr td:first-child{
+        display: none;
+    }
+}
+@media  (min-width: 700px) and (max-width: 999px) {
+    #ContenedorLogin tr td:first-child{
+        width: 50%;
+    }
+    #ContenedorLogin tr td:nth-child(2){
+        background-color: #F4F6F6;
+    }
+
+}
+@media  (min-width: 1000px) and (max-width: 1099px) {
+    #ContenedorLogin tr td:first-child{
+        width: 55%;
+    }
+    #ContenedorLogin tr td:nth-child(2){
+        background-color: #F4F6F6;
+    }
+}
+
+@media  (min-width: 1100px) and (max-width: 1299px) {
+    #ContenedorLogin tr td:first-child{
+        width: 60%;    
+
+
+    }
+    #ContenedorLogin tr td:nth-child(2){
+        background-color: #F4F6F6;
+    }
+}
+
+@media (min-width: 1300px) {
+    #ContenedorLogin tr td:first-child{
+        width: 65%;
+    }
+    #ContenedorLogin tr td:nth-child(2){
+        background-color: #F4F6F6;
+    }
+}
+
+@media (min-width: 1500px) {
+    #ContenedorLogin tr td:first-child{
+        width: 70%;
+    }
+    #ContenedorLogin tr td:nth-child(2){
+        background-color: #F4F6F6;
+    }
+}
+
+.BotonImg{
+    border: 1px solid rgba(255,255,255,0.4) !important;
+    width: 35px;
+    height: 6px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    background: rgba(255,255,255,0.4) !important;
+    top:-47%;
+    margin: 0px;    
+    box-shadow: inset 2px 1px 2px rgba(128, 139, 150,0.4);
+}

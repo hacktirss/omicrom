@@ -1,0 +1,296 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/11/2019, 03:05:19 PM
+    Author     : Tirso bautista Anaya <tirso.bautista@detisa.com.mx>
+*/
+
+/*Set page size here: A5, A4 or A3 
+  Set also "landscape" if you need */
+
+@charset "utf-8";
+:root{
+    --main-color-text: #55514E;
+    --main-color-background: #DADADA;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+#header_report_print{
+    color: var(--main-color-text);
+}
+
+#header_report_print .title{
+    font-size: 10pt;
+}
+
+#header_report_print .sub-title{
+    font-size: 9pt;
+}
+
+#TablaDatosHeader{
+    font-size: 9pt;
+    padding-bottom: 15px;
+}
+
+#TablaDatosHeader > table{
+    width: 100%;
+    border-spacing: 2px;
+    border-collapse: separate;
+    border: solid 2px gray;
+    page-break-inside: auto;
+}
+
+#TablaDatosHeader > table > thead > tr > td{
+    background-color: var(--main-color-background);
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+#TablaDatosReporte table > tbody > tr.subt > td{
+    color:#494949;
+    font-family: cursive;
+    height: 13px;
+    font-size: 10px;
+    background: #CACACA;
+    border-bottom: 1px solid #55514E;
+}
+
+#TablaDatosReporte table > tbody > tr.subt:hover td{
+    background-color: #B7FBB5;
+}
+
+#TablaDatosReporte table > tbody > tr.subt > td:nth-child(1){
+    border-left: 1px solid #55514E;
+}
+
+#TablaDatosReporte table > tbody > tr.subt > td:nth-child(6){
+    text-align: right;
+}
+
+#TablaDatosReporte table > tbody > tr.subt > td:last-child{
+    border-right: 1px solid #55514E;
+}
+
+#TablaDatosReporte table > tbody > tr.color td{
+    background: #B4B4B4;
+    border-top: 1px solid #55514E;
+    border-bottom: 1px solid #55514E;
+}
+
+#TablaDatosReporte table > tbody > tr.color td:nth-child(1){
+    border-left: 1px solid #55514E;
+}
+
+#TablaDatosReporte table > tbody > tr.color td:nth-child(3){
+    font-size: 0px;
+}
+
+#TablaDatosReporte table > tbody > tr.color td:last-child{
+    border-right: 1px solid #55514E;
+}
+
+#TablaDatosReporte{
+    color: var(--main-color-text);
+    font-size: 9pt;
+}
+
+#TablaDatosReporte > div > table{
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+#TablaDatosReporte > div{
+    text-align: center;
+}
+
+#TablaDatosReporte > div > table > thead{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom:  5px;
+}
+
+#TablaDatosReporte > div > table > thead > tr > td{
+    /*border: solid 2px gray;*/
+    padding-left: 3px;
+    padding-right: 5px;
+    height: 22px;
+}
+
+#TablaDatosReporte > div > table > thead > tr > td:first-child{
+    border: solid 2px gray;
+}
+
+#TablaDatosReporte > div > table > thead > tr > td:not(:first-child){
+    border-top: solid 2px gray;
+    border-bottom: solid 2px gray;
+    border-right: solid 2px gray;
+}
+#TablaDatosReporte > div > table > tbody > tr{
+    page-break-inside: avoid; 
+    page-break-after: auto
+}
+
+#TablaDatosReporte > div > table > tbody > tr > td{
+    padding-left: 3px;
+    padding-right: 5px;
+    height: 20px;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+#TablaDatosReporte > div > table > tbody > :nth-child(odd) {
+    background-color: #DADADA;
+}
+
+#TablaDatosReporte > div > table > tbody > :nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+#TablaDatosReporte > div > table > tbody > :nth-child(odd):hover {
+    background-color: #ACECAA;
+}
+
+#TablaDatosReporte > div > table > tbody > :nth-child(even):hover {
+    background-color: #ACECAA;
+}
+
+#TablaDatosReporte > div > table > tfoot > tr:first-child > td{
+    border-top: solid 2px gray;
+}
+
+#TablaDatosReporte > div > table > tfoot > tr > td{
+    padding-left: 3px;
+    padding-right: 5px;
+    height: 22px;
+    text-align: right;
+    font-weight: bold;
+}
+
+#TablaDatosReporte > div > table > thead{
+    background-color: var(--main-color-background);
+}
+
+.fondoGris{
+    background-color: var(--main-color-background);
+}
+
+.texto{
+    text-align: left;
+}
+
+.numero{
+    text-align: right;
+}
+
+.moneda{
+    text-align: right;
+}
+
+.moneda:before {
+    content: "$ ";
+}
+
+.enlace{
+    text-align: center;
+    color: #099;
+    font-size: 9pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#boletos{
+    border: 2px solid gray;
+    width: 9.7cm;
+    height: 4.7cm;
+    font-size: 7pt;
+    margin: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+#boletos > table{
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#boletos > table > tbody > tr:first-child > td:nth-child(2){
+    text-align: center;
+}
+#boletos > table > tbody > tr:nth-child(2) > td:nth-child(1){
+    text-align: center;
+}
+#boletos > table > tbody > tr:nth-child(3) > td:nth-child(1){ /*Titulo*/
+    text-align: center;
+}
+#boletos > table > tbody > tr:nth-child(4) > td:nth-child(1){ /*Fechas*/
+    text-align: center;
+    font-size: 7pt;
+}
+#boletos > table > tbody > tr:nth-child(5) > td:nth-child(1){ /*Importe*/
+    text-align: center;
+}
+
+#boletos > table > tbody > tr:nth-child(6) > td:nth-child(1){ /*Importe Letras*/
+    text-align: center;
+}
+
+#boletos > table > tbody > tr:nth-child(7) > td:nth-child(1){
+    text-align: center;
+}
+
+#boletos .logo{
+    width: 2.5cm;
+    height: 1.5cm;
+}
+
+#acuse{
+    width: 100%;
+    font-weight: bold;
+    /* text-transform: uppercase;*/
+}
+
+#acuse table{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+#acuse table > thead > tr > td{
+    text-align: right;
+    font-size: 11px;
+}
+#acuse table > tbody > tr > td{
+    width: 50%;
+    border: solid 0px gray;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+    height: 30px;
+}
+#acuse table > tbody > tr > td:first-child{
+    text-align: right;
+}
+#acuse table > tbody > tr > td:last-child{
+    text-align: left;
+}
+#acuse table > tbody > tr > td > span{
+    width: 100%;
+    border: solid 1px gray;
+    text-align: center;
+}

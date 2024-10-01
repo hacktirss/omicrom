@@ -1,0 +1,310 @@
+/* 
+    Created on : 14/02/2020, 10:29:22 AM
+    Author     : Tirso bautista Anaya <tirso.bautista@detisa.com.mx>
+*/
+:root{
+    --HeightInputs: 20px;
+}
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 2px 2px 2px 0px #DADADA inset !important;
+    /*-webkit-text-fill-color: white !important;*/
+    transition: background-color 5000s ease-in-out 0s;
+    border-style: none;
+}
+input:-webkit-selected{
+    border-style: none;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+    
+}
+input:focus{
+    box-shadow: 2px 2px 2px 0px #009990 !important;
+}
+
+#Formularios{
+    width: 100%;
+    border: 0px solid red;
+}
+#Formularios .grupo1{
+    width: 100%;
+    min-height: 25px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #006633;
+}
+#Formularios .grupo1 > div{
+    display: inline-table;
+    height: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+#Formularios .grupo1 > div:nth-child(1){
+    width: 25%;
+    height: 100%;
+    background-color: #DADADA;
+    min-width: 150px !important;
+    text-align: right;
+}
+#Formularios .grupo1 > div:nth-child(2){
+    width: 70%;
+}
+#Formularios .grupo1 > div:nth-child(2) > div{
+    display: inline-block;
+}
+#Formularios .grupo1 > div:nth-child(2) > div > div{
+    display: inline-block;
+}
+#Formularios .grupo1 > div:nth-child(2) > div > div:nth-child(1){
+    float: left;
+    width: 40%;
+}
+#Formularios .grupo1 > div:nth-child(2) > div > div:nth-child(2){
+    width: 25%;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#Formularios .grupo1 > div:nth-child(2) > div > div:nth-child(3){
+    width: 30%;
+    float: right;
+}
+
+
+#Formularios input[type="text"],
+#Formularios input[type="date"],
+#Formularios input[type="datetime"],
+#Formularios input[type="email"],
+#Formularios input[type="number"],
+#Formularios input[type="search"],
+#Formularios input[type="time"],
+#Formularios input[type="url"],
+#Formularios textarea,
+#Formularios select {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+    height: 20px;
+    padding-left: 2px;
+    margin: 0; 
+}
+#Formularios select {
+    height: 20px;
+}
+
+#Formularios input[type="submit"], input[type="button"] {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #006633;
+}
+#Formularios input[type="submit"], input[type="button"]:hover {
+    color: #FF6633;
+    cursor: pointer;
+}
+
+#Formularios .clase-0{
+    width: 15%;
+}
+#Formularios .clase-1{
+    width: 30%;
+}
+#Formularios .clase-2{
+    width: 60%;
+}
+#Formularios .clase-3{
+    width: 75%;
+}
+#Formularios .clase-4{
+    width: 90%;
+}
+#Formularios .clase-5{
+    width: 100%;
+}
+
+#Formularios .disabled{
+    cursor: not-allowed;
+}
+
+
+#FormulariosBoots{
+    width: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+    letter-spacing: 0.5px;
+}
+#FormulariosBoots > div > div > div{
+    float: left;
+/*    color: #006633;*/
+}
+#FormulariosBoots .background{
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    padding: 15px;
+}
+#FormulariosBoots .title{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #099;
+}
+#FormulariosBoots .subtitle {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #099;
+}
+#FormulariosBoots .label{
+    font-weight: bold;
+}
+#FormulariosBoots .sup{
+    color: #099;
+}
+#FormulariosBoots i{
+    color: #099;
+}
+#FormulariosBoots .withBackground{
+    background-color: #E1E1E1;
+    color: #006633;
+    height: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#FormulariosBoots .withBackground:hover {
+    overflow: visible; 
+    white-space: normal;
+    height: auto !important;
+    cursor: pointer;
+}
+#FormulariosBoots .required:before{
+    content: "* ";
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+#FormulariosBoots .warning{
+    text-align: center;
+    color: red;
+}
+#FormulariosBoots .align-right{
+    text-align: right;  
+    padding-right: 5px;
+    padding-top: 3px;
+}
+#FormulariosBoots .align-left{
+    text-align: left;
+}
+#FormulariosBoots .align-center{
+    text-align: center;
+}
+#FormulariosBoots input[type="text"],
+#FormulariosBoots input[type="date"],
+#FormulariosBoots input[type="datetime"],
+#FormulariosBoots input[type="email"],
+#FormulariosBoots input[type="number"],
+#FormulariosBoots input[type="search"],
+#FormulariosBoots input[type="time"],
+#FormulariosBoots input[type="url"],
+#FormulariosBoots input[type="password"],
+#FormulariosBoots select {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+    width: 100%;
+    height: var(--HeightInputs);
+    padding-left: 5px;
+}
+#FormulariosBoots textarea{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+    width: 100%;
+}
+#FormulariosBoots input[type="submit"]{
+    min-width: 50px;
+    color: #006633;
+    font-weight: normal;
+    font-size: 12px;
+}
+#FormulariosBoots input[type="submit"]:hover{
+    color: #FF6633;    
+    /*font-weight: bold;*/
+    cursor: pointer;
+}
+#FormulariosBoots button{
+    min-width: 50px;
+    color: #006633;
+    font-weight: normal;
+    font-size: 12px;
+}
+#FormulariosBoots button:hover{
+    color: #FF6633;    
+    /*font-weight: bold;*/
+    cursor: pointer;
+}
+#FormulariosBoots .btn-boots{
+    background-color: #099;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.no-padding > [class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.no-margin > .row{
+    margin-bottom: 5px;
+}
+.no-margin .row{
+    margin-bottom: 5px;
+}
+
+
+
+#FormularioChecks{
+    width: 100%;
+}
+#FormularioChecks > form > table{
+    width: 100%;
+}
+#FormularioChecks > form > table > tbody > tr > td{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    color: #55514e;
+    border: solid 2px white;
+    height: 20px;
+}
+#FormularioChecks > form > table > tbody > tr > td > input[type="submit"]{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    padding-left: 5px;
+    background-color: #009990;
+    color: white;
+    font-weight: bold;
+}
+#FormularioChecks > form > table > tbody > tr > td > input[type="submit"]:hover{
+    background-color: #FF6633;
+}
+#FormularioChecks > form > table > tbody > tr > td .micheck[type="checkbox"]{
+    padding-right: 10px;
+    width: 14px;
+    height: 14px;
+}
+#FormularioChecks > form > table > tbody > tr > td .micheck[type="checkbox"]:disabled{
+    cursor: not-allowed;
+}
+#FormularioChecks > form > table > tbody > tr > td .tachar{
+    text-decoration: line-through;
+}

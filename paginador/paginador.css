@@ -1,0 +1,232 @@
+/*
+Estilos del módulo de paginación
+Created on : 28 ago 2019, 13:25:06
+Author     : Rolando Esquivel Villafaña
+*/
+
+.paginador {
+    text-align: center; 
+    width: 100%;
+    margin: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+.paginador td {
+    color: #243775;
+    padding-left: 2px;
+    padding-right: 2px;
+    max-width: 150px;
+    height: 18px !important;
+    /*width: 50px;*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.paginador th {
+    background-color: #006666;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px !important;
+    text-align: center;
+}
+.paginador th:first-child {
+    border-radius: 8px 0px 0px 8px;
+}
+.paginador th:last-child {
+    border-radius: 0px 8px 8px 0px;
+}
+.paginador tr td:first-child {
+    border-radius: 8px 0px 0px 8px;
+}
+.paginador tr td:last-child {
+    border-radius: 0px 8px 8px 0px;
+}
+.paginador tr:nth-child(even) {
+    background-color: #E1E1E1;
+}
+.paginador tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+.paginador tr:hover {
+    background-color: #B9CDEE;
+}
+.paginador tr td:hover {
+    overflow: visible; 
+    white-space: normal;
+    height: 18px !important;
+}
+.paginador a{ 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px; font-weight: normal; 
+    color: #006633; 
+    text-decoration: none;
+}
+.paginador a:hover{  
+    color: #FF6633; 
+}
+.paginador2 {
+    text-align: center; 
+    width: 100%;
+    margin: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+.paginador2 td {
+    color: #243775;
+    padding-left: 2px;
+    padding-right: 2px;
+    max-width: 150px;
+    /*width: 50px;*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.paginador2 th {
+    background-color: #FF6633;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+}
+.paginador2 tr:nth-child(even) {
+    background-color: #E1E1E1;
+}
+.paginador2 tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+.paginador2 tr:hover {
+    background-color: #B9CDEE;
+}
+.paginador2 tr td:hover {
+    overflow: visible; 
+    white-space: normal;
+    height:auto;
+}
+
+
+.clickable {
+    cursor: pointer;
+}
+.choosed {
+    min-width: 50px;
+}
+.message {
+    color: #FF6633; 
+    font-size: 14px; 
+    font-weight: bold; 
+    text-align: left;
+    padding-top: 10px;
+}
+
+table[width="1010"] {
+    width: 100% !important;
+}
+table[width="1011"] {
+    width: 78% !important;
+}
+
+.tablelink {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #999;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.tablelink:hover{
+    color: #666;
+}
+.pagerfooter {
+    width: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    color: #243775;
+}
+.indexer {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+}
+.indexer ul {
+    float: none;
+}
+.indexer ul li {
+    display: inline-table;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.indexer ul li a, .indexer ul li span {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.indexer ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #606c84;
+    transition: color .2s cubic-bezier(0.55, 0, 0.55, 0.2) , font-size .2s cubic-bezier(0.55, 0, 0.55, 0.2) ;
+}
+.indexer ul li span {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #F63;
+}
+.indexer ul li a:hover {
+    font-size: 18px;
+    background-color: #B9CDEE;
+    color: #F63;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+.indexer i.fa {
+    font-size: 16px;
+    display: inline-block;
+    padding: 1px;
+}
+.indexer i.fa:hover {
+    font-size: 24px;
+}
+.quicksearch {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #243775;
+    width: 100%; 
+    border: 0px;
+    border-collapse: collapse; 
+    background-color: #CACACA;
+}
+.quicksearch td {
+    border: 1px solid white;
+    padding: 3px;
+}
+
+.quicksearch td{
+    max-width: 80px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.quicksearch td:first-child {
+    max-width: 130px;
+}
+
+.alignCenter{
+    text-align: center;
+}

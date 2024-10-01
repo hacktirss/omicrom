@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/02/2019, 01:51:34 PM
+    Author     : Tirso
+*/
+
+#TablaDatos{
+    width: 100%;
+    min-width: 780px;
+    min-height: 280px;
+    text-align: center;
+}
+
+#TablaDatos table{
+    border-collapse: separate; 
+    border: 0px solid #066;
+    width: 100%;
+    text-align: left;
+}
+
+#TablaDatos .fondoGris{
+    background-color: #DADADA;
+    color: gray;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+}
+
+#TablaDatos .fondoGris a{
+    color: gray;
+    text-decoration: none;
+}
+
+#TablaDatos .fondoGris a:hover{
+    color: #ff6633;
+    text-decoration: none;
+}
+
+#TablaDatos .fondoVerde{
+    background-color: #006666;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+}
+
+#TablaDatos .fondoVerde a{
+    color: white;
+    text-decoration: none;
+}
+
+#TablaDatos .fondoVerde a:hover{
+    color: #ff6633;
+    text-decoration: none;
+}
+
+#TablaDatos .fondoNaranja{
+    background-color: #ff6633;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#TablaDatos .fondoNaranja a{
+    color: white;
+    text-decoration: none;
+}
+
+#TablaDatos .fondoNaranja a:hover{
+    color: #006666;
+    text-decoration: none;
+}
+
+#TablaDatos .upTitles{
+    height: 25px;
+    background-color: white;
+    border-top: solid 2px #CACACA;
+    font-weight: bold;
+    text-align: right;
+}
+
+#TablaDatos .upTitlesSin{
+    height: 25px;
+    background-color: white;
+    border-top: solid 0px #CACACA;
+    font-weight: bold;
+    text-align: right;
+}
+
+#TablaDatos .downTitles{
+    height: 25px;
+    background-color: white;
+    border-bottom: solid 2px #7A868C;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: right;
+}
+
+#TablaDatos .numero{
+    text-align: right;
+}
+#TablaDatos .remarcar{
+    background-color: #F7FF7C;
+}
+
+#TablaDatos td{
+    border-spacing: 1px;
+    border-collapse: separate;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+    height: 18px;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+
+#TablaDatos tr:nth-child(odd) {
+    background-color: #DADADA;
+}
+
+#TablaDatos tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+#TablaDatos tr:nth-child(odd):hover {
+    background-color: #ACECAA;
+}
+
+#TablaDatos tr:nth-child(even):hover {
+    background-color: #ACECAA;
+}
+
+#TablaDatos td img{
+    width: 15px;
+    height: 15px;
+}
+
+#TablaDatos td img:hover{
+    width: 20px;
+    height: 20px;
+}
+
+#TablaDatos td input[type="submit"]{
+    color: #006633;
+}
+
+#DatosEncabezado{
+    width: 100%;
+    min-width: 780px;
+    text-align: left;
+    border: 2px solid gray;  
+    border-radius: 5px;
+}
+
+#DatosEncabezado table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    width: 99%;
+}
+
+
+#DatosEncabezado td{
+    background-color: #E1E1E1;
+    border-spacing: 3px;
+    border-collapse: separate;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+    height: 18px;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+
+#DatosEncabezado td label{
+    font-weight: bold;
+}
+
+#DatosEncabezado .naranja{
+    font-weight: bold;
+    color: #FF6633;
+}
+
+#DatosEncabezado td input[type="submit"]{
+    color: #006633;
+}

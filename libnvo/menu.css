@@ -1,0 +1,184 @@
+#menu {  
+    position: static;
+    background: transparent;
+    cursor: default;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#menu > ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+#menu > ul > li {
+    list-style: none;
+    position: relative;
+    float: left;
+    padding-left: 6px;
+}
+#menu > ul > li:hover {
+    color: #00906C;
+}
+#menu > ul > li > a {    
+    text-decoration: none;
+    position: relative;
+    color:#014c4d;
+    font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    font-size:10px;
+}
+#menu > ul > li:hover > a {
+    color: #00906C;
+    /*gris de fondo*/
+}
+#menu > ul > li:hover {
+    /*gris de fondo*/
+    border-radius: 2px 2px 0px 0px;
+    background: #F7F7F7;
+}
+#menu > ul > li> div {
+    border-color: #666;
+    list-style: none;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: #F7F7F7;
+}
+#menu > ul > li:hover > div {
+    display: table;color: #00906C;
+    -webkit-border-radius: 0px 7px 7px 7px;
+    -moz-border-radius: 0px 7px 7px 7px;
+    -khtml-border-radius: 0px 7px 7px 7px;
+    border-radius: 0px 7px 7px 7px;
+    left: 0%;
+}
+#menu > ul > li > div > ul {
+    list-style: none;
+    display: table-cell;
+    padding: 6px 6px 2px 2px;
+}
+#menu > ul > li ul + ul {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#menu > ul > li ul > li > a {
+    text-decoration: none;
+    padding: 4px;
+    color: #006666;
+    min-width: 100px;        
+    display:block;white-space:nowrap;
+    position:relative;z-index:1;
+    font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;font-size:11px;
+}
+#menu > ul > li ul > li > a:hover {
+    /*padding:2px;*/        
+    color: #ff6633;
+    background: rgba(218, 218, 218,0.8);
+}
+#menu > ul > li > div > ul > li > a {
+    color: #014c4d;
+}
+
+.form-style-5{
+    max-width: 100%;
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+    border: none;
+}
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+    background: #d2d9dd;
+}
+.form-style-5 select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.form-style-5 .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    color: #FFF;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px 5px 5px 5px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+
+    color: #F32F2F;
+    border-radius: 5px 5px 5px 5px;
+}
+.form-style-5 input[type="submit"]:active,
+.form-style-5 input[type="button"]:active
+{
+    border-radius: 5px 5px 5px 5px
+}

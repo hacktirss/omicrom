@@ -1,0 +1,97 @@
+/* 
+    Created on : 11/11/2019, 12:49:06 PM
+    Author     : Tirso bautista Anaya <tirso.bautista@detisa.com.mx>
+*/
+
+@page { 
+    margin: 0; 
+}
+body { 
+    margin: 0; 
+}
+#content {
+    display: table;
+}
+
+#pageFooter {
+    display: table-footer-group;
+    text-align: center;
+    font-size: 10px;
+}
+.sheet {
+    margin: 0;
+    overflow: hidden;
+    position: initial;
+    box-sizing: border-box;
+    page-break-before: always;
+}
+
+/** Paper sizes **/
+body.A4               .sheet { width: 210mm; height: 296mm }
+body.A4.landscape     .sheet { width: 297mm; height: 209mm }
+body.A4-Middle        .sheet { width: 105mm; height: 74mm }
+body.A4-Ticket        .sheet { width: 80mm; }
+
+/** Padding area **/
+.sheet.padding-10mm { padding: 10mm 5mm;}
+.sheet.padding-15mm { padding: 15mm 5mm;}
+.sheet.padding-20mm { padding: 20mm 5mm;}
+.sheet.padding-25mm { padding: 25mm 5mm;}
+
+/** For screen preview **/
+@media screen {
+    body { 
+        background: #AAAAAA; 
+    }
+    .sheet {
+        background: white;
+        box-shadow: 0 .5mm 2mm rgba(0,0,0,.5);
+        margin: 5mm auto;
+    }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+
+    body.A4, body.A4.landscape, body.A4-Middle,body.A4-Ticket { 
+        margin: initial;
+    }
+
+    body.A4 .enlace,.iconos {
+        display: none;
+    }
+
+}
+
+.iconos{
+    width: 100%;
+    height: 1cm;
+    background-color: #5A5A5A; 
+    color: white;
+    position: fixed !important;
+    position: absolute; /*ie6 */
+    top: 0;
+    padding-left: 20px;
+}
+.iconos table{
+    width: 100%;
+}
+.iconos i{
+    padding: 0.25cm;
+    cursor: pointer;
+    border-radius: 0.5cm;
+}
+.iconos i:hover{
+    background-color: #BABABA;
+}
+
+.iconos a{
+    text-decoration: none;
+    color: white;
+}
+
+.text{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+}

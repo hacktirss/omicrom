@@ -1,0 +1,678 @@
+@charset "utf-8";
+
+:root{
+    --VerdeLinks: #006633;
+    --Naranja: #FF6633;
+    --GrisClaro: #DADADA;
+    --GrisFuerte: #CACACA;
+    --VerdeHover: #ACECAA;
+    --BorderColorButton: gray;
+}
+
+@media print { 
+    .oculto {display:none} 
+} 
+
+html,body {
+    height: 95%;
+}
+
+body{
+    background-color: white;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    min-width: 750px;
+}
+
+a{
+    cursor: pointer;
+}
+
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid black;
+    height: 80%;
+    display: table;
+}
+
+#footer {
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+a.textosCualli { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px; 
+    font-weight: normal; 
+    color: #006633; 
+    text-decoration: none;
+}
+
+a.textosCualli:hover { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px; 
+    font-weight: normal; 
+    color: #6D8693
+}
+
+
+.texto_tablas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+
+.texto_tablas_mini {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #55514e;
+}
+
+.mensajes{
+    width: 90%;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 60px;
+    color: red;
+}
+
+.enlaceboton {    
+    font-family: sans-serif;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    font-size: 12px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-style: normal;
+}
+
+.seleccionar {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #006633;
+    text-decoration: none;
+}
+
+
+/***********************************Reportes*Nuevo estilo**********************/
+
+
+#Reportes h4 {
+    color: #273746;
+    align-content: center;
+}
+
+#Reportes{
+    width: 100%;
+    min-height: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#Reportes > table{
+    width: 100%;
+    border-collapse: separate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+#Reportes > table > thead > tr > td{
+    height: 25px;
+    background-color: white;
+    border-bottom: solid 2px gray;
+    font-weight: bold;
+    text-align: center;
+}
+#Reportes > table > thead > tr > td > a{
+    text-decoration: none;
+    color: #55514e;
+    font-weight: bold;
+}
+#Reportes > table > thead > tr.titulo > td{
+    background-color: var(--GrisClaro);
+    border-bottom: solid 2px white;
+}
+#Reportes > table > tbody > tr > td{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+}
+#Reportes > table > tbody > tr > td.overflow{
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#Reportes > table > tbody > tr > td.overflow:hover{
+    overflow: visible; 
+    white-space: normal;
+}
+#Reportes > table > tbody > tr:nth-child(odd) {
+    background-color: var(--GrisClaro);
+}
+
+#Reportes > table > tbody > tr:nth-child(even) {
+    background-color: white;
+}
+
+#Reportes > table > tbody > tr:nth-child(odd):hover {
+    background-color: var(--VerdeHover);
+}
+
+#Reportes > table > tbody > tr:nth-child(even):hover {
+    background-color: var(--VerdeHover);
+}
+#Reportes > table > tbody > tr.titulos > td{
+    height: 25px;
+    background-color: white;
+    border-bottom: solid 2px gray;
+    font-weight: bold;
+    text-align: center;
+}
+#Reportes > table > tbody > tr.subtotal > td{
+    height: 25px;
+    background-color: white;
+    border-top: solid 2px gray;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 10px;
+}
+#Reportes > table > tbody > tr.titulo > td{
+    height: 25px;
+    background-color: var(--GrisClaro);
+    font-weight: bold;
+    text-align: right;
+    text-align: center;
+}
+#Reportes > table > tbody > tr.subtitulo > td{
+    height: 25px;
+    background-color: white;
+    font-weight: bold;
+    text-align: right;
+    text-align: center;
+}
+#Reportes > table > tbody > tr > td.numero,.moneda{
+    text-align: right;
+}
+#Reportes > table > tbody > tr > td.remarcar{
+    background-color: #F7FF7C;
+}
+#Reportes > table > tbody > tr > td.moneda:before{
+    content: "$ ";
+}
+#Reportes > table > tfoot > tr > td{
+    height: 25px;
+    background-color: white;
+/*    border-top: solid 2px gray;*/
+    font-weight: bold;
+    text-align: right;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#Reportes > table > tfoot > tr:first-child > td{
+    border-top: solid 2px gray;
+    padding-bottom: 10px;
+}
+#Reportes > table > tfoot > tr > td.moneda:before{
+    content: "$ ";
+}
+/******************************************************************************/
+
+#TablaDatosReporte{
+    width: 100%;
+    min-height: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#TablaDatosReporte table{
+    border-collapse: separate; 
+    border: 0px solid #066;
+    width: 100%;
+    text-align: center;
+}
+
+#TablaDatosReporte .tdEncabezado{
+    height: 30px;
+    background-color: #DADADA;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+#TablaDatosReporte .tdCliente{
+    height: 25px;
+    background-color: white;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+#TablaDatosReporte .upTitles{
+    height: 25px;
+    background-color: white;
+    border-top: solid 2px #CACACA;
+    font-weight: bold;
+    text-align: right;
+}
+
+#TablaDatosReporte .upTitlesSin{
+    height: 25px;
+    background-color: white;
+    border-top: solid 2px white;
+    font-weight: bold;
+    text-align: right;
+}
+
+#TablaDatosReporte .downTitles{
+    height: 25px;
+    background-color: white;
+    border-bottom: solid 2px #CACACA;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+}
+
+#TablaDatosReporte .downTitles a{
+    text-decoration: none;
+    color: #55514e;
+}
+
+#TablaDatosReporte .downTitles a:hover{
+    text-decoration: none;
+    color: #ff6633;
+}
+
+#TablaDatosReporte td{
+    border-spacing: 1px;
+    border-collapse: separate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+    height: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#TablaDatosReporte tr:nth-child(odd) {
+    background-color: var(--GrisClaro);
+}
+
+#TablaDatosReporte tr:nth-child(even) {
+    background-color: white;
+}
+
+#TablaDatosReporte tr:nth-child(odd):hover {
+    background-color: var(--VerdeHover);
+}
+
+#TablaDatosReporte tr:nth-child(even):hover {
+    background-color: var(--VerdeHover);
+}
+
+#TablaDatosReporte td img{
+    width: 15px;
+    height: 15px;
+}
+
+#TablaDatosReporte td img:hover{
+    width: 20px;
+    height: 20px;
+}
+
+
+/*******************************Controles Form****************************/
+
+#Controles{
+    width: 100%;
+    background-color: var(--GrisClaro);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+#Controles > table{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate; 
+    border: 2px solid #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+#Controles > table > tbody > tr{
+    height: 40px;
+}
+#Controles > table > tbody > tr > td{
+    border-collapse: separate; 
+    border: 2px solid #FFF;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+#Controles > table > tbody > tr > td > a{
+    text-decoration: none;
+    color: var(--VerdeLinks);
+}
+#Controles > table > tbody > tr > td > a:hover{
+    text-decoration: none;
+    color: var(--Naranja);
+}
+#Controles input[type="submit"]{
+    min-width: 80px;
+    padding: 3px 5px;
+    color: var(--VerdeLinks);
+    border: 0.5px solid var(--BorderColorButton);
+}
+#Controles input[type="submit"]:hover{
+    color: var(--Naranja);
+    cursor: pointer;
+}
+#Controles > table > tbody > tr > td > span > button{
+    min-width: 40px;
+    padding: 3px 5px;
+    color: var(--VerdeLinks);
+    border: 0.5px solid var(--BorderColorButton);
+}
+#Controles > table > tbody > tr > td > span > button:hover{
+    color: var(--Naranja);
+    cursor: pointer;
+}
+#Controles .calendario{
+    padding: 1px;
+    color: gray;
+    font-size: 9px;
+}
+#Controles .pdf{
+    color: red;
+}
+#Controles .ButtonExcel{    
+    background-color: buttonface; 
+    min-width: 40px;
+    padding: 4px 5px;
+    border: 0.5px solid var(--BorderColorButton);
+    color: var(--VerdeLinks);
+}
+#Controles .ButtonExcel:hover{ 
+    color: var(--Naranja);
+    cursor: pointer;
+}
+#Controles input,select{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+#Controles .Formulario div{
+    font-weight: bold;
+    font-size: 12px;
+}
+#Controles .Formulario table{
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+
+#Controles .Formulario table > tbody > tr{ 
+    height: 30px;
+}
+#Controles .Formulario table > tbody > tr > td{ 
+    min-width: 80px;
+    text-align: left;
+}
+#Controles .Formulario .Retro{
+    background-color: var(--VerdeLinks);
+    color: white;
+    font-weight: bold;
+    text-align: left !important;
+    width: 80px;
+}
+#Controles .Formulario table > tbody > tr > td > input[type=submit]{
+    color: var(--VerdeLinks);
+}
+#Controles .Formulario table > tbody > tr > td > input[type=submit]:hover{
+    color: var(--Naranja);
+}
+#Controles .Titulo{
+    font-size: 20px;
+    color: var(--VerdeLinks);
+    font-weight: bold;
+}
+#Controles .Subtitulo{
+    font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+/*******************************actions forms*****************************/
+
+input[type=submit]{
+    color: #006633;
+}
+
+input[type=submit]:hover{
+    color: #ff6633;
+}
+
+/***************************** Impresiones ************************************/
+
+.iconos{
+    width: 100%;
+    height: 1cm;
+    background-color: #5A5A5A; 
+    color: white;
+    position: fixed !important;
+    position: absolute; /*ie6 */
+    top: 0;
+    padding-left: 20px;
+}
+.iconos table{
+    width: 100%;
+}
+.iconos i{
+    padding: 0.25cm;
+    cursor: pointer;
+    border-radius: 0.5cm;
+}
+.iconos i:hover{
+    background-color: #BABABA;
+}
+
+
+/*********************Estilos para pide datos**********************************/
+
+#PideDatos{
+    width: 100%;
+    text-align: center;
+}
+#PideDatos > div{
+    text-align: center;
+    font-size: 18px;
+    color: #55514e;
+}
+#PideDatos > table{
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate; 
+    border: 2px solid #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+#PideDatos > table > tbody > tr{
+    height: 40px;
+}
+#PideDatos > table > tbody > tr > td{
+    border-collapse: separate; 
+    border: 2px solid #FFF;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+#PideDatos > table > tbody > tr > td > span > input[type=submit]{
+    width: 80px;
+    color: var(--VerdeLinks);;
+}
+#PideDatos > table > tbody > tr > td > span > input[type=submit]:hover{
+    color: var(--Naranja);;
+}
+#PideDatos > table > tbody > tr > td > span > button{
+    width: 40px;
+    color: var(--VerdeLinks);;
+}
+#PideDatos > table > tbody > tr > td > span > button:hover{
+    color: var(--Naranja);;
+}
+#PideDatos .calendario{
+    padding: 1px;
+    color: gray;
+    font-size: 9px;
+}
+#PideDatos .pdf{
+    color: red;
+}
+#PideDatos input,select{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+
+
+/************Estilos para corte parcial************/
+
+#CorteParcial{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #55514e;
+}
+
+#CorteParcial .header_corte{
+    width: 100%;
+}
+
+#CorteParcial .content_corte{
+    width: 100%;
+    display: inline-block
+}
+
+#CorteParcial .content_corte > div:first-child{
+    width: 70%;
+}
+#CorteParcial .content_corte > div:first-child > table{
+    width: 100%;
+}
+#CorteParcial .content_corte > div:first-child > table > thead > tr{
+    height: 30px;
+}
+#CorteParcial .content_corte > div:first-child > table > thead > tr > th:first-child{
+    width: 50%;
+}
+#CorteParcial .content_corte > div:first-child > table > thead > tr > th:nth-child(2){
+    width: 50%;
+}
+#CorteParcial .content_corte > div:first-child > table > tbody > tr{
+    height: 25px;
+}
+#CorteParcial .content_corte > div:first-child > table > tbody > tr > td:nth-child(2){
+    text-align: left;
+}
+#CorteParcial .content_corte > div:first-child > table > tbody > tr > td img{
+    height: 15px;    
+}
+#CorteParcial .content_corte > div:nth-child(2){
+    width: 30%;
+}
+#CorteParcial .content_corte > div:nth-child(2) > div > div{
+    border: 1px solid white;
+    border-spacing: 2px;
+    height: 25px;
+    text-align: left;
+}
+#CorteParcial .content_corte > div:nth-child(2) > div input[type="checkbox"]{
+    display: inline;
+}
+/*Boton Pequeño Checkbox*/
+
+input[class="botonAnimatedMin"]{
+    position: relative;
+    width: 25px;
+    height: 13px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+input:checked[class="botonAnimatedMin"]{
+    background: #5499C7;
+}
+input[class="botonAnimatedMin"]:before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    top:0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+input:checked[class="botonAnimatedMin"]:before{
+    left: 13px;
+}
+caption {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
